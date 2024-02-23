@@ -1,10 +1,14 @@
 import requests
 import streamlit as st
 
+st.set_page_config(page_title="Hemorrhage Detection Demo", page_icon="🧠")
+
+
+
 endpoint_url = "https://api.autogon.ai/api/v1/label/model/predict/"
 api_key = st.secrets["api-key"]
 
-st.title("Hemorrhage Detection Demo")
+st.title("Hemorrhage Detection Demo 🧠")
 
 def get_img_prediction(image_url :str) -> str:
     # local variables

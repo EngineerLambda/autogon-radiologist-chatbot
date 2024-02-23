@@ -5,7 +5,7 @@ import uuid
 
 
 st.set_page_config(page_title="AI Medic", page_icon="🩺")
-st.title("AI Medic")
+st.title("AI Medic 🩺")
 
 # Keep the same id for each session
 if "id" not in st.session_state:
