@@ -31,7 +31,6 @@ if prompt := st.chat_input("What Radiology questions do you have?"):
     
     # AI response part, conversation done to autogon
     agent_id = st.secrets["agent_id"]
-    print(f"{agent_id = }")
     url = f"https://api.autogon.ai/api/v1/services/chatbot/{agent_id}/chat/"
 
     # set payload for request as in autogon docs
